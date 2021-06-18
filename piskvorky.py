@@ -8,19 +8,10 @@ def vyhodnot(retezec):
 	else:
 		return '-'
 
-def tah(pole, cislo_policka, symbol):
-	nove_pole = pole[:cislo_policka] + pole[cislo_policka+1:]
-	print(nove_pole)
-	return nove_pole
 
 def tah_hrace(pole, symbol):
 	cislo_policka = int(input("Zadej policko, kam chces hrat: "))
 	return tah(pole, cislo_policka, symbol)
-
-def tah_pocitace(pole, symbol):
-	cislo_policka = int(input("Zadej policko, kam chces hrat: "))
-	return tah(pole, cislo_policka, symbol)
-
 
 def piskvorky():
 	hraci_pole = 20 * '-'
